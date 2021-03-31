@@ -1,0 +1,40 @@
+                 <!-- DOM -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background: rgb(110, 86, 247);
+            color: white;
+            font: normal 18pt Arial;
+
+       }
+
+    </style>
+</head>
+<body>
+    <h1>Primeiros passos com DOM</h1>
+    <P>Aqui vai o resultado</P>
+    <p>Aprendendo a usar o <u><strong>DOM</strong></u></strong> em Javascript.</p>
+    <!-- <div id="msg">Clique em mim</div>  -->
+    <div id="msg">Clique em mim</div>
+    <script>
+        var p1 = window.document.getElementsByTagName('p')[0]       //Estou dizendo que a variável var p1 recebe o que está em <p></p>, e o [0] diz que é o primeiro <p>.....Caso eu quisesse usar o segundo seria [1]
+         /*
+            window.document.write(p1.innerText)  //Joga o valor de p1 na tela
+         var d = window.document.getElementById("msg")
+         d.innerText = "Alterei a informação da TAG div por aqui"
+         d.style.background = "red"
+         */
+
+         var d = window.document.querySelector("div#msg") //  "#" = para id ,   e "." para class
+         d.style.background = "pink"
+         //var d = window.document.getElementsByName("msg")[0]
+         //d.innerText = "Olá!"
+    </script>
+</body>
+</html>                                   
